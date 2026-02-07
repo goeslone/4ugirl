@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 🌹</title>
+    <style>
+        body { background-color: #fff0f3; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
+        .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 80%; }
+        button { padding: 12px 25px; margin: 10px; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        #yes-btn { background-color: #ff4d6d; color: white; }
+        #no-btn { background-color: #6c757d; color: white; position: relative; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color: #ff4d6d;">Ab rona band karo aur ye dekho... 🌹</h2>
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyMjZqcXVycWZ6ejk4Y3NtcXYxcjk0Z2wxb2dyZGpkbmR6b3g4cDBsciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wvYNSqBAMDVx8CEYkt/giphy.gif" width="150">
+        <p>Happy Rose Day! DM mein maza nahi aa raha tha, toh socha thoda effort daal doon. 😉</p>
+        
+        <button id="yes-btn" onclick="alert('I knew it! ❤️ Happy Rose Day, drama queen.')">I Love It!</button>
+        <button id="no-btn" onmouseover="moveBtn()" onclick="moveBtn()">Bakwaas Hai</button>
+    </div>
+
+    <script>
+        function moveBtn() {
+            const btn = document.getElementById('no-btn');
+            const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+            btn.style.position = 'fixed';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
